@@ -1,6 +1,6 @@
 = Paneron Documents Register Control
 
-image:https://img.shields.io/gem/v/paneron-documents-register-ctl.svg["Gem Version", link="https://rubygems.org/gems/paneron-documents-register-ctl"]
+image:https://img.shields.io/gem/v/paneron-documents_register_ctl.svg["Gem Version", link="https://rubygems.org/gems/paneron-documents_register_ctl"]
 image:https://github.com/paneron/documents-register-ctl/actions/workflows/test.yaml/badge.svg["Build Status",Link="https://github.com/paneron/documents-register-ctl/actions/workflows/test.yaml"]
 image:https://codeclimate.com/github/paneron/documents-register-ctl/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/paneron/documents-register-ctl"]
 image:https://img.shields.io/github/issues-pr-raw/paneron/documents-register-ctl.svg["Pull Requests", link="https://github.com/paneron/documents-register-ctl/pulls"]
@@ -153,7 +153,7 @@ update-flakes
 
 When actually creating a new version for release, do the following:
 
-. Update the `VERSION` in file link:lib/paneron/register/version.rb[`lib/paneron/register/version.rb`^].
+. Update the `VERSION` in file link:lib/paneron/documents_register_ctl/version.rb[`lib/paneron/documents_register_ctl/version.rb`^].
 . [[:space:]]
 +
 [source,shell]

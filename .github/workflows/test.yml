@@ -1,0 +1,61 @@
+name: rake
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    tags: [ v* ]
+    paths-ignore:
+      - '**.md'
+      - '**.adoc'
+      - '.github/workflows/*.yaml'
+      - '!.github/workflows/test.yaml'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+      - '**.adoc'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+
+    concurrency:
+      group: '${{ github.workflow }}-${{ matrix.os }}-${{ matrix.ruby.version }}-${{ github.head_ref || github.ref_name }}'
+      cancel-in-progress: true
+
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        os:
+        - "macos-latest"
+        - "ubuntu-latest"
+        - "windows-latest"
+        ruby:
+          - version: '3.4'
+            experimental: true
+          - version: '3.3'
+            experimental: false
+          - version: '3.2'
+            experimental: false
+          - version: '3.1'
+            experimental: false
+        exclude:
+        - os: windows-latest
+          ruby:
+            version: 3.4
+            experimental: true
+    continue-on-error: ${{ matrix.ruby.experimental }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby.version }}
+          bundler-cache: true
+      - name: Install dependencies
+        run: bundle install
+      - name: Run tests
+        run: bundle exec rspec

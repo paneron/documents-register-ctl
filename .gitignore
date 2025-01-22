@@ -1,0 +1,37 @@
+# Direnv
+.direnv
+
+# Javascript
+/bin
+/node_modules
+/.npm
+/dist
+/yarn-error.log
+/dependencies-local
+/.cache
+/runtime-config
+
+# Ruby + RSpec
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+/.tmp.xml
+/test.*
+/a.*
+
+# rspec failure tracking
+.rspec_status
+
+/spec/assets/test*
+/spec/assets/test/
+/spec/assets/extract/
+Gemfile.lock
+relaton/
+.vscode/
+.rubocop-https--*

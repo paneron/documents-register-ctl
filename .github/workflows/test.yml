@@ -40,8 +40,6 @@ jobs:
             experimental: false
           - version: '3.2'
             experimental: false
-          - version: '3.1'
-            experimental: false
         exclude:
         - os: windows-latest
           ruby:

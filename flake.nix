@@ -89,6 +89,8 @@
           gnused
           jq
           nodejs
+          gcc
+          pkg-config
           # rubocop
           # ruby
           # rubyfmt # Broken

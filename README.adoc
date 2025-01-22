@@ -10,6 +10,162 @@ image:https://img.shields.io/github/commits-since/paneron/documents-register-ctl
 This is a CLI tool for managing a register of documents
 in a Paneron repository.
 
+== Installation
+
+TBI
+
+// ```sh
+// gem install paneron-documents_register_ctl
+// ```
+
+== Usage
+
+[source,console]
+----
+> # TBD
+----
+
+// For more usage examples, see link:docs/examples.adoc[`Examples`^]
+// and related link:spec/worked_examples_spec.rb[`spec/worked_examples_spec.rb`^].
+
+== Development
+
+Git clone this repository, then install dependencies.
+
+[source,shell]
+----
+git clone https://github.com/paneron/documents-register-ctl
+cd documents-register-ctl
+bundle install
+----
+
+=== Without Nix
+
+Open development shell (`irb`) with:
+
+[source,shell]
+----
+bundle exec irb
+----
+
+Open development shell (`pry`) with:
+
+[source,shell]
+----
+bundle exec pry
+----
+
+Run tests with:
+
+[source,shell]
+----
+bundle exec rspec
+# or
+bundle exec rake spec
+----
+
+Run lint with:
+
+[source,shell]
+----
+bundle exec rubocop
+----
+
+Run lint with autocorrect with:
+
+[source,shell]
+----
+bundle exec rubocop -a
+----
+
+Release to Rubygem (adds a Git tag, pushes to GitHub and releases to Rubygem) with:
+
+[source,shell]
+----
+bundle exec rake release
+----
+
+=== With Nix
+
+If your system is using Nix, run the following to gain access to shell aliases:
+
+[source,shell]
+----
+nix develop
+----
+
+Open development shell (`irb`) with:
+
+[source,shell]
+----
+irb
+# or
+console
+----
+
+Open development shell (`pry`) with:
+
+[source,shell]
+----
+pry
+----
+
+Run tests with:
+
+[source,shell]
+----
+rspec
+----
+
+Run lint with:
+
+[source,shell]
+----
+lint
+# or
+rubocop
+----
+
+Run lint with autocorrect with:
+
+[source,shell]
+----
+lint -a
+# or
+rubocop -a
+----
+
+Release to Rubygem (adds a Git tag, pushes to GitHub and releases to Rubygem) with:
+
+[source,shell]
+----
+release
+----
+
+Update Nix flakes with:
+
+[source,shell]
+----
+update-flakes
+----
+
+== Release workflow
+
+When actually creating a new version for release, do the following:
+
+. Update the `VERSION` in file link:lib/paneron/register/version.rb[`lib/paneron/register/version.rb`^].
+. [[:space:]]
++
+[source,shell]
+----
+git add lib/paneron/documents_register_ctl/version.rb
+git commit -m 'chore: Release vX.Y.Z' # change X.Y.Z to actual version
+git push
+
+# Run rake release
+bundle exec rake release
+----
+
 == License
 
 See link:./LICENSE[`LICENSE`^] for license information.

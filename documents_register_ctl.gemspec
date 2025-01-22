@@ -30,8 +30,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "git", "~> 2.3.1"
   spec.add_runtime_dependency "lutaml-model", "~> 0.5.3"
   spec.add_runtime_dependency "paneron-register", "~> 0.3.2"
-  spec.add_runtime_dependency "uuid", "~> 2.3.9"
   spec.add_runtime_dependency "thor", "~> 1.3.2"
+  spec.add_runtime_dependency "uuid", "~> 2.3.9"
 
   spec.add_development_dependency "debug"
   spec.add_development_dependency "pry"

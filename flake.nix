@@ -33,6 +33,12 @@
         ];
         commands = [
           {
+            name = "doctl";
+            command = "bin/doctl \"$@\"";
+            help = "Run doctl";
+            category = "App";
+          }
+          {
             name = "irb";
             command = "bundle exec irb \"$@\"";
             help = "Run console IRB (has completion menu)";

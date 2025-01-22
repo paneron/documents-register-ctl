@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "paneron/documents_register_ctl/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "paneron-documents-register-ctl"
+  spec.name          = "paneron-documents_register_ctl"
   spec.version       = Paneron::DocumentsRegisterCtl::VERSION
   spec.authors       = ["Ribose Inc."]
   spec.email         = ["open.source@ribose.com"]

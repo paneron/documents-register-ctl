@@ -1,7 +1,7 @@
 = Paneron Documents Register Control
 
 image:https://img.shields.io/gem/v/paneron-documents_register_ctl.svg["Gem Version", link="https://rubygems.org/gems/paneron-documents_register_ctl"]
-image:https://github.com/paneron/documents-register-ctl/actions/workflows/test.yaml/badge.svg["Build Status",Link="https://github.com/paneron/documents-register-ctl/actions/workflows/test.yaml"]
+image:https://github.com/paneron/documents-register-ctl/actions/workflows/test.yml/badge.svg["Build Status",Link="https://github.com/paneron/documents-register-ctl/actions/workflows/test.yml"]
 image:https://codeclimate.com/github/paneron/documents-register-ctl/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/paneron/documents-register-ctl"]
 image:https://img.shields.io/github/issues-pr-raw/paneron/documents-register-ctl.svg["Pull Requests", link="https://github.com/paneron/documents-register-ctl/pulls"]
 image:https://img.shields.io/github/commits-since/paneron/documents-register-ctl/latest.svg["Commits since latest",link="https://github.com/paneron/documents-register-ctl/releases"]

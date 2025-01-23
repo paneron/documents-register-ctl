@@ -2,7 +2,6 @@
 .direnv
 
 # Javascript
-/bin
 /node_modules
 /.npm
 /dist

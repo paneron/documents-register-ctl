@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
 module Paneron
-  module DocumentsRegisterCtl
+  module RegisterCtl
     module Command
-      class Init
+      class InitDataset
         def initialize(directory)
           @directory = directory
         end
 
         def run
-          log { "going to create a new register in #{@directory}" }
+          log { "going to create a new dataset in #{@directory}" }
         end
       end
     end

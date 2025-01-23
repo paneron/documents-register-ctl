@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Paneron
-  module DocumentsRegisterCtl
+  module RegisterCtl
     VERSION = "0.0.1"
   end
 end

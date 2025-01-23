@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Paneron
-  module DocumentsRegisterCtl
+  module RegisterCtl
     module Command
     end
   end

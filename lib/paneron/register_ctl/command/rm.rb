@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
 module Paneron
-  module DocumentsRegisterCtl
+  module RegisterCtl
     module Command
-      class Ls
-        def initialize(data_path)
+      class Rm
+        def initialize(_data_pathfiles)
           @data_path = data_path
         end
 
         def run
-          log { "showing 'files' in #{@data_path}" }
+          log { "going to remove in #{@data_path}" }
         end
       end
     end

@@ -1,13 +1,13 @@
-= Paneron Documents Register Control
+= Paneron Register Control
 
-image:https://img.shields.io/gem/v/paneron-documents_register_ctl.svg["Gem Version", link="https://rubygems.org/gems/paneron-documents_register_ctl"]
-image:https://github.com/paneron/documents-register-ctl/actions/workflows/test.yml/badge.svg["Build Status",Link="https://github.com/paneron/documents-register-ctl/actions/workflows/test.yml"]
-image:https://codeclimate.com/github/paneron/documents-register-ctl/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/paneron/documents-register-ctl"]
-image:https://img.shields.io/github/issues-pr-raw/paneron/documents-register-ctl.svg["Pull Requests", link="https://github.com/paneron/documents-register-ctl/pulls"]
-image:https://img.shields.io/github/commits-since/paneron/documents-register-ctl/latest.svg["Commits since latest",link="https://github.com/paneron/documents-register-ctl/releases"]
+image:https://img.shields.io/gem/v/paneron-register_ctl.svg["Gem Version", link="https://rubygems.org/gems/paneron-register_ctl"]
+image:https://github.com/paneron/register-ctl/actions/workflows/test.yml/badge.svg["Build Status",Link="https://github.com/paneron/register-ctl/actions/workflows/test.yml"]
+image:https://codeclimate.com/github/paneron/register-ctl/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/paneron/register-ctl"]
+image:https://img.shields.io/github/issues-pr-raw/paneron/register-ctl.svg["Pull Requests", link="https://github.com/paneron/register-ctl/pulls"]
+image:https://img.shields.io/github/commits-since/paneron/register-ctl/latest.svg["Commits since latest",link="https://github.com/paneron/register-ctl/releases"]
 
 
-This is a CLI tool for managing a register of documents
+This is a CLI tool for managing a register of data entities
 in a Paneron repository.
 
 == Installation
@@ -15,7 +15,7 @@ in a Paneron repository.
 TBI
 
 // ```sh
-// gem install paneron-documents_register_ctl
+// gem install paneron-register_ctl
 // ```
 
 == Usage
@@ -34,8 +34,8 @@ Git clone this repository, then install dependencies.
 
 [source,shell]
 ----
-git clone https://github.com/paneron/documents-register-ctl
-cd documents-register-ctl
+git clone https://github.com/paneron/register-ctl
+cd register-ctl
 bundle install
 ----
 
@@ -153,12 +153,12 @@ update-flakes
 
 When actually creating a new version for release, do the following:
 
-. Update the `VERSION` in file link:lib/paneron/documents_register_ctl/version.rb[`lib/paneron/documents_register_ctl/version.rb`^].
+. Update the `VERSION` in file link:lib/paneron/register_ctl/version.rb[`lib/paneron/register_ctl/version.rb`^].
 . [[:space:]]
 +
 [source,shell]
 ----
-git add lib/paneron/documents_register_ctl/version.rb
+git add lib/paneron/register_ctl/version.rb
 git commit -m 'chore: Release vX.Y.Z' # change X.Y.Z to actual version
 git push
 

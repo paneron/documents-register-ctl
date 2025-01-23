@@ -1,15 +1,16 @@
 # frozen_string_literal: true
 
 module Paneron
-  module DocumentsRegisterCtl
+  module RegisterCtl
     module Command
-      class Rm
-        def initialize(_data_pathfiles)
+      class Upload
+        def initialize(data_path, *files)
           @data_path = data_path
+          @files = files
         end
 
         def run
-          log { "going to remove in #{@data_path}" }
+          log { "adding files to #{data_path}: #{files}" }
         end
       end
     end

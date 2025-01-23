@@ -33,9 +33,9 @@
         ];
         commands = [
           {
-            name = "doctl";
-            command = "bin/doctl \"$@\"";
-            help = "Run doctl";
+            name = "ctl";
+            command = "bin/ctl \"$@\"";
+            help = "Run ctl";
             category = "App";
           }
           {

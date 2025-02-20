@@ -101,7 +101,8 @@
           # ruby
           # rubyfmt # Broken
           rubyPackages.ruby-lsp
-          rubyPackages.solargraph
+          # solargraph
+          # rubyPackages.solargraph
           rubyPackages.sorbet-runtime
           ripgrep
           wget

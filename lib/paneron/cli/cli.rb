@@ -33,7 +33,7 @@ end
 
 module Paneron
   module Cli
-    class CLI < Thor
+    class Cli < Thor
       class_option :verbose, type: :boolean, aliases: "-v", desc: "Be verbose"
       class_option :debug, type: :boolean, aliases: "-d",
                            desc: "Enable debugging output"

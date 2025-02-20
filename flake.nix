@@ -34,7 +34,7 @@
         commands = [
           {
             name = "paneron";
-            command = "bin/paneron \"$@\"";
+            command = "exe/paneron \"$@\"";
             help = "Run Paneron CLI";
             category = "App";
           }

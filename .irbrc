@@ -1,2 +1,2 @@
-require "paneron/cli"
+require_relative "lib/paneron/cli"
 include Paneron::Cli

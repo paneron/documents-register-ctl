@@ -2,7 +2,7 @@
 
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "paneron/cli/version"
+require_relative "lib/paneron/cli/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "paneron-cli"
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
     || f.match(%r{Rakefile|bin/rspec})
   end
   spec.extra_rdoc_files = %w[README.adoc CHANGELOG.adoc LICENSE.txt]
-  spec.bindir        = "bin"
+  spec.bindir        = "exe"
   # spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.required_ruby_version = ">= 3.2.0"

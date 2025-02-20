@@ -8,7 +8,9 @@ image:https://img.shields.io/github/commits-since/paneron/cli/latest.svg["Commit
 
 
 This is a CLI tool for managing a register of data entities
-in a Paneron repository.
+in a Paneron repository,
+that follows the specification outlined
+https://github.com/lutaml/docs/blob/main/paneron-cli.adoc[here^].
 
 == Installation
 

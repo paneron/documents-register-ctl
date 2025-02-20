@@ -39,33 +39,9 @@
             category = "App";
           }
           {
-            name = "irb";
-            command = "bundle exec irb \"$@\"";
-            help = "Run console IRB (has completion menu)";
-            category = "Ruby";
-          }
-          {
-            name = "console";
-            command = "bundle exec irb \"$@\"";
-            help = "Run console IRB (has completion menu)";
-            category = "Ruby";
-          }
-          {
-            name = "pry";
-            command = "bundle exec pry \"$@\"";
-            help = "Run pry";
-            category = "Ruby";
-          }
-          {
             name = "release";
             command = "bundle exec rake release \"$@\"";
             help = "Run rake release, which adds a tag and pushes to RubyGems";
-            category = "Ruby";
-          }
-          {
-            name = "rubocop";
-            command = "bundle exec rubocop \"$@\"";
-            help = "Run rubocop";
             category = "Ruby";
           }
           {
@@ -75,18 +51,42 @@
             category = "Ruby";
           }
           {
-            name = "rspec";
-            command = "bundle exec rspec \"$@\"";
-            help = "Run test suite";
-            category = "Ruby";
-          }
-          {
             name = "update-flakes";
             command = "make update-flakes \"$@\"";
             help = "Update all flakes";
             category = "Nix";
           }
-        ];
+        ] ++
+        # XXX: These won't work with ASDF shims,
+        # so only append if there is a .tool-verions file:
+        (if builtins.pathExists ./tool-versions.nix then
+          [{
+
+            name = "irb";
+            command = "bundle exec irb \"$@\"";
+            help = "Run console IRB (has completion menu)";
+            category = "Ruby";
+          }
+            {
+              name = "console";
+              command = "bundle exec irb \"$@\"";
+              help = "Run console IRB (has completion menu)";
+              category = "Ruby";
+            }
+            {
+              name = "pry";
+              command = "bundle exec pry \"$@\"";
+              help = "Run pry";
+              category = "Ruby";
+            }
+            {
+              name = "rspec";
+              command = "bundle exec rspec \"$@\"";
+              help = "Run test suite";
+              category = "Ruby";
+            }]
+        else [ ]);
+
         packages = with pkgs; [
           bash
           curl

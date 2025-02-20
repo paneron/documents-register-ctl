@@ -1,6 +1,0 @@
-#!/usr/bin/env ruby
-
-require "bundler/setup"
-require "paneron/register_ctl"
-
-Paneron::RegisterCtl::CLI.start(ARGV)

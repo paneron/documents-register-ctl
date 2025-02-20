@@ -33,9 +33,9 @@
         ];
         commands = [
           {
-            name = "ctl";
-            command = "bin/ctl \"$@\"";
-            help = "Run ctl";
+            name = "paneron";
+            command = "bin/paneron \"$@\"";
+            help = "Run Paneron CLI";
             category = "App";
           }
           {

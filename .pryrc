@@ -1,2 +1,2 @@
-require "paneron/register"
-include Paneron::Register
+require "paneron/cli"
+include Paneron::Cli

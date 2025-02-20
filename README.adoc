@@ -1,10 +1,10 @@
-= Paneron Register Control
+= Paneron CLI
 
-image:https://img.shields.io/gem/v/paneron-register_ctl.svg["Gem Version", link="https://rubygems.org/gems/paneron-register_ctl"]
-image:https://github.com/paneron/register-ctl/actions/workflows/test.yml/badge.svg["Build Status",Link="https://github.com/paneron/register-ctl/actions/workflows/test.yml"]
-image:https://codeclimate.com/github/paneron/register-ctl/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/paneron/register-ctl"]
-image:https://img.shields.io/github/issues-pr-raw/paneron/register-ctl.svg["Pull Requests", link="https://github.com/paneron/register-ctl/pulls"]
-image:https://img.shields.io/github/commits-since/paneron/register-ctl/latest.svg["Commits since latest",link="https://github.com/paneron/register-ctl/releases"]
+image:https://img.shields.io/gem/v/paneron-cli.svg["Gem Version", link="https://rubygems.org/gems/paneron-cli"]
+image:https://github.com/paneron/cli/actions/workflows/test.yml/badge.svg["Build Status",Link="https://github.com/paneron/cli/actions/workflows/test.yml"]
+image:https://codeclimate.com/github/paneron/cli/badges/gpa.svg["Code Climate", link="https://codeclimate.com/github/paneron/cli"]
+image:https://img.shields.io/github/issues-pr-raw/paneron/cli.svg["Pull Requests", link="https://github.com/paneron/cli/pulls"]
+image:https://img.shields.io/github/commits-since/paneron/cli/latest.svg["Commits since latest",link="https://github.com/paneron/cli/releases"]
 
 
 This is a CLI tool for managing a register of data entities
@@ -15,7 +15,7 @@ in a Paneron repository.
 TBI
 
 // ```sh
-// gem install paneron-register_ctl
+// gem install paneron-cli
 // ```
 
 == Usage
@@ -34,8 +34,8 @@ Git clone this repository, then install dependencies.
 
 [source,shell]
 ----
-git clone https://github.com/paneron/register-ctl
-cd register-ctl
+git clone https://github.com/paneron/cli
+cd cli
 bundle install
 ----
 
@@ -153,12 +153,12 @@ update-flakes
 
 When actually creating a new version for release, do the following:
 
-. Update the `VERSION` in file link:lib/paneron/register_ctl/version.rb[`lib/paneron/register_ctl/version.rb`^].
+. Update the `VERSION` in file link:lib/paneron/cli/version.rb[`lib/paneron/cli/version.rb`^].
 . [[:space:]]
 +
 [source,shell]
 ----
-git add lib/paneron/register_ctl/version.rb
+git add lib/paneron/cli/version.rb
 git commit -m 'chore: Release vX.Y.Z' # change X.Y.Z to actual version
 git push
 

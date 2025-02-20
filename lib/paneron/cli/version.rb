@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 module Paneron
-  module RegisterCtl
-    module Command
-    end
+  module Cli
+    VERSION = "0.0.1"
   end
 end

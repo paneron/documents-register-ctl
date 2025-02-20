@@ -1,16 +1,15 @@
 # frozen_string_literal: true
 
 module Paneron
-  module RegisterCtl
+  module Cli
     module Command
-      class Upload
-        def initialize(data_path, *files)
+      class LsVersions
+        def initialize(data_path)
           @data_path = data_path
-          @files = files
         end
 
         def run
-          log { "adding files to #{data_path}: #{files}" }
+          log { "showing versions of #{@data_path}" }
         end
       end
     end

@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
 module Paneron
-  module RegisterCtl
+  module Cli
     module Command
-      class SetAdd
+      class Set
         def initialize(key, value)
           @key = key
           @value = value
         end
 
         def run
-          log { "adding value to key, #{@key} => #{@value}" }
+          log { "setting key value, #{@key} => #{@value}" }
         end
       end
     end

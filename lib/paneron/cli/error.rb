@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Paneron
-  module RegisterCtl
+  module Cli
     class Error < StandardError
     end
   end

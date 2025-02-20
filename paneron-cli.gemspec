@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   # spec.add_runtime_dependency "yaml"
 
   spec.add_runtime_dependency "git", "~> 2.3.1"
-  spec.add_runtime_dependency "lutaml-model", "~> 0.5.3"
+  spec.add_runtime_dependency "lutaml-model", "~> 0.5.4"
   spec.add_runtime_dependency "paneron-register", "~> 0.3.2"
   spec.add_runtime_dependency "thor", "~> 1.3.2"
   spec.add_runtime_dependency "uuid", "~> 2.3.9"
@@ -37,7 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "debug"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rspec", "~> 3.13"
   spec.add_development_dependency "rspec-command", "~> 1.0"
   spec.add_development_dependency "rubocop", "~> 1.67.0"
   spec.add_development_dependency "rubocop-performance", "~> 1.22.1"

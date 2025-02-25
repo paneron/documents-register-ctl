@@ -58,8 +58,8 @@
           }
         ] ++
         # XXX: These won't work with ASDF shims,
-        # so only append if there is a .tool-verions file:
-        (if builtins.pathExists ./tool-versions.nix then
+        # so only append if there is no .tool-verions file:
+        (if ! builtins.pathExists ./.tool-versions then
           [{
 
             name = "irb";
